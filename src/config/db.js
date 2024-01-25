@@ -1,10 +1,6 @@
-// db.js
-import { configDotenv } from 'dotenv';
 import pgPool from 'pg';
 
-const { Pool } = pgPool;
-
-configDotenv();
+const { Pool } = pgPool
 
 const pool = new Pool({
     user: 'postgres',
@@ -12,8 +8,7 @@ const pool = new Pool({
     database: 'twitter',
     password: 'postgres',
     port: 5432,
-});
+})
 
-export default pool;
-
+export default pool
 

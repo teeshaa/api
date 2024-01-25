@@ -1,8 +1,9 @@
+import pool from '../config/db.js'; 
+
 import {
-  pool,
   userExistsQuery,
   insertUserQuery,
-} from "../queries/user.queries";
+} from "../queries/user.queries.js";
 
 export const registerUser = async (req, res) => {
   const { username, email, password } = req.body;

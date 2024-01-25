@@ -1,5 +1,5 @@
 import express from 'express'
-import { registerUser } from '../twitter-api/src/controllers/user.controller'
+import { registerUser } from './src/controllers/user.controller.js'
 
 const app = express();
 app.use(express.json());
